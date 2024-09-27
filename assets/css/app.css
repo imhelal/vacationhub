@@ -1,0 +1,103 @@
+:root {
+  --primary-color: #e61c5d;
+  --yellow: #ffbd39;
+  --black-text: #112b3c;
+  --gray-text: #808080;
+  --white-text: #fff;
+}
+
+/* Common CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  max-width: 1145px;
+  margin: 0 auto;
+}
+
+.btn.primary-btn {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--white-text);
+  padding: 18px 24px;
+  background-color: var(--primary-color);
+  border-radius: 45px;
+}
+.primary-color {
+  color: var(--primary-color);
+}
+.yellow-color {
+  color: var(--yellow);
+}
+/* Header CSS */
+header {
+  background: var(--white-text);
+  box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.04);
+}
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100px;
+}
+
+.header-logo img {
+  width: 142px;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+
+.navbar ul li a,
+.header-cta a {
+  color: var(--gray-text);
+  font-size: 20px;
+}
+
+.navbar ul li.active a {
+  color: var(--black-text);
+  font-weight: 500;
+}
+
+.login-btn {
+  margin-right: 30px;
+}
+
+/* Hero section */
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 84px 0px;
+}
+
+.hero-content h1 {
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 120%;
+  color: var(--black-text);
+  max-width: 570px;
+}
+
+.hero-content p {
+  font-size: 24px;
+  color: var(--gray-text);
+  margin: 32px 0;
+  max-width: 470px;
+}
