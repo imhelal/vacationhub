@@ -4,6 +4,7 @@
   --black-text: #112b3c;
   --gray-text: #808080;
   --white-text: #fff;
+  --box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.04);
 }
 
 /* Common CSS */
@@ -11,6 +12,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -45,7 +47,7 @@ a {
 /* Header CSS */
 header {
   background: var(--white-text);
-  box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.04);
+  box-shadow: var(--box-shadow);
 }
 .header-wrapper {
   display: flex;
@@ -68,11 +70,33 @@ header {
 .header-cta a {
   color: var(--gray-text);
   font-size: 20px;
+  position: relative;
+  transition: all 0.5s;
 }
 
-.navbar ul li.active a {
+.navbar ul li a::after {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 4px;
+  background: var(--primary-color);
+  border-radius: 30px;
+  bottom: -6px;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, 0);
+  transition: all 0.5s;
+}
+
+.navbar ul li.active a,
+.navbar ul li a:hover {
   color: var(--black-text);
   font-weight: 500;
+}
+
+.navbar ul li.active a::after,
+.navbar ul li a:hover::after {
+  opacity: 1;
 }
 
 .login-btn {
@@ -94,10 +118,77 @@ header {
   color: var(--black-text);
   max-width: 570px;
 }
+.title-shape {
+  position: relative;
+  z-index: 1;
+}
+.title-shape img {
+  position: absolute;
+  left: 0%;
+  bottom: 0;
+  z-index: -1;
+}
 
 .hero-content p {
   font-size: 24px;
   color: var(--gray-text);
   margin: 32px 0;
   max-width: 470px;
+}
+
+.hero-search-input {
+  display: flex;
+  gap: 16px;
+}
+
+.hero-search {
+  max-width: 470px;
+  min-height: 80px;
+  border-radius: 58px;
+  box-shadow: var(--box-shadow);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 27px;
+  gap: 14px;
+}
+
+.select-box label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--gray-text);
+  display: inline-block;
+  margin-bottom: 6px;
+  position: relative;
+}
+.select-box label::after {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background-image: url("../icons/arrow-down.svg");
+  top: 1px;
+  right: -17px;
+}
+
+.select-box select {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--black-text);
+  border: none;
+}
+
+.search-devider {
+  width: 1px;
+  height: 24px;
+  background: var(--gray-text);
+}
+
+.hero-submit button {
+  background: var(--primary-color);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
 }

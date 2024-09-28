@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,6 +13,7 @@
       rel="stylesheet"
     />
 
+    <!-- App CSS -->
     <link rel="stylesheet" href="assets/css/app.css">
 
   </head>
@@ -53,20 +55,67 @@
 
     <!-- Hero Section -->
     <section class="container hero-section">
+
         <div class="hero-content">
-            <h1>Dare to live <span class="primary-color">the life</span> you've always <span class="yellow-color">wanted</span>.</h1>
+            <h1>Dare to live 
+                <span class="primary-color title-shape">
+                    the life
+                    <img src="assets/icons/title-shape.svg" alt="">
+                </span>
+                     you've always 
+                <span class="yellow-color">
+                        wanted
+                </span>.
+            </h1>
             <p>
                 Life is short and the world is wide. So, better get started.
             </p>
             <div class="hero-search">
+                <div class="hero-search-input">
 
+                    <img src="assets/icons/location.svg" alt="">
+
+                    <div class="select-box">
+                        <label for="location">Location</label>
+                        <select name="" id="location">
+                            <option value="">Allentown, New Mexico</option>
+                            <option value="">Allentown, New Mexico</option>
+                            <option value="">Allentown, New Mexico</option>
+                            <option value="">Allentown, New Mexico</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="search-devider"></div>
+
+                <div class="hero-search-input">
+
+                    <img src="assets/icons/calendar.svg" alt="">
+
+                    <div class="select-box">
+                        <label for="">Date</label>
+                        <select name="" id="">
+                            <option value="">04 Aug, 2022</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="hero-submit">
+                    <button>
+                        <img src="assets/icons/search.svg" alt="">
+                    </button>
+                </div>
+            </div><!-- /.hero-search -->
             </div>
         </div><!-- /.hero-cotent -->
+
         <div class="hero-img">
             <img src="assets/images/hero-img.png" alt="">
         </div><!-- /.hero-img -->
+
     </section>
 
-    <!-- Test comment -->
+
  
 </html>
