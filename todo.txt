@@ -1,3 +1,2 @@
 Header item fotn weight issue.
-Label issue
-search box devider issue.
+Label & select padding issue

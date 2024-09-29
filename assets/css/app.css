@@ -25,6 +25,10 @@ li {
 a {
   text-decoration: none;
 }
+img {
+  max-width: 100%;
+}
+
 .container {
   max-width: 1145px;
   margin: 0 auto;
@@ -44,6 +48,19 @@ a {
 .yellow-color {
   color: var(--yellow);
 }
+.section-title {
+  font-size: 48px;
+  color: var(--black-text);
+  font-weight: 700;
+}
+
+.sub-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 4px;
+}
+
 /* Header CSS */
 header {
   background: var(--white-text);
@@ -108,7 +125,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 84px 0px;
+  padding: 84px 0px 0 0;
 }
 
 .hero-content h1 {
@@ -150,14 +167,12 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 0px 27px;
-  gap: 14px;
 }
 
 .select-box label {
   font-size: 12px;
   font-weight: 600;
   color: var(--gray-text);
-  display: inline-block;
   margin-bottom: 6px;
   position: relative;
 }
@@ -176,6 +191,7 @@ header {
   font-weight: 700;
   color: var(--black-text);
   border: none;
+  display: block;
 }
 
 .search-devider {
@@ -191,4 +207,41 @@ header {
   border-radius: 50%;
   border: none;
   cursor: pointer;
+}
+
+/* About Us */
+.about-section {
+  padding: 120px 0px;
+}
+.about-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about-content {
+  padding-left: 134px;
+}
+.about-desc {
+  font-size: 20px;
+  color: var(--gray-text);
+  line-height: 160%;
+  margin: 24px 0;
+}
+
+.count-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.count {
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--primary-color);
+  display: block;
+}
+.count-title {
+  font-size: 16px;
+  color: var(--gray-text);
+  max-width: 100px;
+  display: block;
 }
