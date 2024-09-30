@@ -242,3 +242,113 @@ header {
   max-width: 100px;
   display: block;
 }
+
+/* Toure places */
+.place-section {
+  padding-bottom: 60px;
+}
+
+.place-section .section-title {
+  max-width: 591px;
+}
+
+.toure-places {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  padding-top: 80px;
+}
+
+.tour-place-item {
+  border-radius: 16px;
+  box-shadow: var(--box-shadow);
+}
+.place-content {
+  padding: 20px 24px 30px 24px;
+}
+
+.place-content h3 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 132%;
+  color: var(--black-text);
+}
+
+.place-content p {
+  font-size: 14px;
+  color: var(--gray-text);
+  margin: 8px 0;
+}
+.place-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.place-footer span.price {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--primary-color);
+  line-height: 132%;
+}
+.place-footer span:last-child {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--gray-text);
+  line-height: 132%;
+}
+
+/* Testimonial */
+.testimonial-section {
+  text-align: center;
+  padding: 60px 0px;
+  color: var(--black-text);
+}
+.testimonial-section .section-title {
+  max-width: 591px;
+  margin: 0 auto 80px auto;
+}
+
+.testimonials {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.testimonial-item {
+  box-shadow: var(--box-shadow);
+  padding: 46px 42px 42px 42px;
+  position: relative;
+}
+
+.testimonial-item::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: url(../icons/quotetion.svg);
+  top: -6%;
+  right: 27px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.client-profile {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.testimonial-item h4 {
+  font-size: 18px;
+  font-weight: 700;
+}
+.testimonial-item span {
+  font-size: 14px;
+  display: block;
+  margin: 4px 0px;
+}
+
+.testimonial-item p {
+  font-size: 14px;
+  line-height: 133%;
+  margin-top: 12px;
+}
