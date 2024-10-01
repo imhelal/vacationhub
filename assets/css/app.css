@@ -18,6 +18,7 @@
 body {
   font-family: "Barlow", sans-serif;
   font-weight: 400;
+  background: #f5f5f5;
 }
 li {
   list-style: none;
@@ -38,6 +39,8 @@ a {
   padding: 18px 24px;
   background-color: var(--primary-color);
   border-radius: 45px;
+  border: none;
+  cursor: pointer;
 }
 .primary-color {
   color: var(--primary-color);
@@ -289,6 +292,7 @@ header {
   font-weight: 700;
   color: var(--primary-color);
   line-height: 132%;
+  margin-top: 8px;
 }
 .place-footer span:last-child {
   font-size: 12px;
@@ -351,4 +355,86 @@ header {
   font-size: 14px;
   line-height: 133%;
   margin-top: 12px;
+}
+
+/* Tour Section */
+.toure-section {
+  padding: 60px 0px 120px 0px;
+  text-align: center;
+}
+.toure-title {
+  margin-bottom: -20px;
+}
+
+.toure-section .section-title {
+  max-width: 676px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-desc {
+  font-size: 18px;
+  color: var(--gray-text);
+  margin: 32px 0px;
+  text-align: center;
+}
+
+.tour-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.tour-item {
+  border-radius: 16px;
+  box-shadow: var(--box-shadow);
+  padding: 9px 9px 21px 9px;
+  text-align: left;
+}
+.tour-item img {
+  max-width: 100%;
+}
+.tour-item h3 {
+  margin: 12px 0px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.tour-item .price {
+  color: var(--primary-color);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 132%;
+}
+
+.tour-item span:last-child {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--gray-text);
+  margin-left: 13px;
+}
+
+.tour-item:first-child,
+.tour-item:last-child {
+  margin-bottom: 40px;
+}
+
+.tour-item:nth-child(2),
+.tour-item:nth-child(3) {
+  max-width: 190px;
+  max-height: 217px;
+}
+
+.tour-item:nth-child(2) h3,
+.tour-item:nth-child(3) h3 {
+  font-size: 14px;
+  margin: 11px 0px;
+}
+
+.tour-item:nth-child(2) .price,
+.tour-item:nth-child(3) .price {
+  font-size: 16px;
+}
+.tour-item:nth-child(2) span,
+.tour-item:nth-child(3) span {
+  font-size: 10px;
 }
