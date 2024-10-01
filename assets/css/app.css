@@ -25,6 +25,7 @@ li {
 }
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 .container {
@@ -285,6 +286,7 @@ header {
 .place-footer {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
 }
 
 .place-footer span.price {
@@ -390,7 +392,13 @@ header {
   box-shadow: var(--box-shadow);
   padding: 9px 9px 21px 9px;
   text-align: left;
+  transition: all 0.2s;
+  border: 1px solid transparent;
 }
+.tour-item:hover {
+  border-color: #000;
+}
+
 .tour-item img {
   max-width: 100%;
 }
@@ -437,4 +445,76 @@ header {
 .tour-item:nth-child(2) span,
 .tour-item:nth-child(3) span {
   font-size: 10px;
+}
+
+/* Footer */
+footer {
+  background: #ffff;
+  padding: 120px 0px;
+}
+.footer-columns {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-brand p {
+  font-size: 14px;
+  color: var(--black-text);
+  line-height: 140%;
+  margin: 18px 0px;
+}
+
+.footer-social li {
+  display: inline-block;
+  margin-right: 12px;
+}
+
+.footer-menu h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--black-text);
+}
+
+.footer-menu ul li {
+  font-size: 14px;
+  color: var(--black-text);
+  margin: 18px 0px;
+}
+
+.footer-newslatter h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--black-text);
+}
+
+.footer-newslatter p {
+  font-size: 14px;
+  color: var(--black-text);
+  line-height: 140%;
+  margin: 18px 0px;
+  max-width: 207px;
+}
+
+.footer-newslatter form {
+  position: relative;
+}
+
+.footer-newslatter input {
+  padding: 18px 19px 16px 19px;
+  box-shadow: var(--box-shadow);
+  width: 100%;
+  color: var(--gray-text);
+  font-size: 12px;
+  line-height: 140%;
+  border-radius: 55px;
+  border: none;
+  outline: none;
+}
+
+.footer-newslatter button {
+  position: absolute;
+  border: none;
+  top: 17%;
+  right: 3%;
+  cursor: pointer;
+  background-color: transparent;
 }
