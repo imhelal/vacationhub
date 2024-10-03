@@ -1,0 +1,140 @@
+@media only screen and (max-width: 600px) {
+  /*header */
+  .header-cta {
+    display: none;
+  }
+
+  .container {
+    max-width: 100%;
+    overflow: hidden;
+    padding: 0px 15px;
+  }
+  .hero-section {
+    flex-direction: column-reverse;
+    padding-top: 50px;
+  }
+  .hero-content h1 {
+    font-size: 50px;
+  }
+  .title-shape img {
+    max-width: 100%;
+  }
+  .hero-content p {
+    font-size: 22px;
+  }
+  .hero-img img {
+    max-width: 270px;
+    margin: 0 auto;
+  }
+
+  .hero-search {
+    flex-direction: column;
+    align-items: end;
+    gap: 20px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-radius: 5px;
+  }
+  .hero-search-input {
+    width: 100%;
+  }
+  .search-devider {
+    display: none;
+  }
+
+  /* about */
+  .about-section {
+    padding: 50px 0px;
+  }
+  .about-wrapper {
+    flex-direction: column;
+  }
+  .about-img img {
+    max-width: 270px;
+  }
+  .about-content {
+    padding-left: 0;
+  }
+  .count-wrapper {
+    flex-wrap: wrap;
+    row-gap: 30px;
+  }
+  .count-item {
+    width: 50%;
+    text-align: center;
+  }
+  .count-title {
+    margin: 0 auto;
+  }
+
+  /* Tour place */
+  .toure-places {
+    padding-top: 20px;
+  }
+  .place-section .owl-nav {
+    position: absolute;
+    top: -10%;
+    right: 2%;
+  }
+
+  /* Testimonials */
+  .testimonial-section {
+    padding: 0px 0px;
+  }
+  .testimonial-section .section-title {
+    margin: 0 auto 20px auto;
+  }
+
+  /* Tour */
+  section.toure-section {
+    padding: 40px 0px 80px 0px;
+  }
+
+  .toure-title {
+    margin-bottom: 25px;
+  }
+  .tour-items {
+    flex-wrap: wrap;
+    row-gap: 6px;
+  }
+  .tour-item {
+    width: 50%;
+  }
+  .tour-item:first-child,
+  .tour-item:last-child {
+    margin-bottom: 0px;
+  }
+  .tour-item:nth-child(2),
+  .tour-item:nth-child(3) {
+    max-width: unset;
+    max-height: unset;
+  }
+  .tour-item:nth-child(2) h3,
+  .tour-item:nth-child(3) h3 {
+    font-size: 18px;
+    margin: 12px 0px;
+  }
+  .tour-item:nth-child(2) .price,
+  .tour-item:nth-child(3) .price {
+    font-size: 20px;
+  }
+  .tour-item:nth-child(2) span,
+  .tour-item:nth-child(3) span {
+    font-size: 14px;
+  }
+
+  /* Footer */
+  footer {
+    padding: 50px 0px;
+  }
+  .footer-columns {
+    flex-direction: column;
+    gap: 25px;
+  }
+  .footer-newslatter input {
+    width: 300px;
+  }
+  .footer-newslatter form {
+    max-width: fit-content;
+  }
+}

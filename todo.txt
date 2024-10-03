@@ -1,2 +1,3 @@
 Header item fotn weight issue.
 Label & select padding issue
+Owl carouse left container issue

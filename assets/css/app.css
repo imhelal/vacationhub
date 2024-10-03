@@ -61,7 +61,9 @@ a {
   color: var(--primary-color);
   margin-bottom: 4px;
 }
-
+select {
+  background: transparent;
+}
 /* Header CSS */
 header {
   background: var(--white-text);
@@ -250,6 +252,7 @@ header {
 /* Toure places */
 .place-section {
   padding-bottom: 60px;
+  position: relative;
 }
 
 .place-section .section-title {
@@ -257,15 +260,17 @@ header {
 }
 
 .toure-places {
-  display: flex;
-  justify-content: space-between;
-  gap: 30px;
   padding-top: 80px;
 }
 
 .tour-place-item {
   border-radius: 16px;
+  overflow: hidden;
   box-shadow: var(--box-shadow);
+}
+.tour-place-item img:first-child {
+  height: 300px;
+  object-fit: cover;
 }
 .place-content {
   padding: 20px 24px 30px 24px;
@@ -282,6 +287,9 @@ header {
   font-size: 14px;
   color: var(--gray-text);
   margin: 8px 0;
+}
+.place-content img {
+  max-width: 50px;
 }
 .place-footer {
   display: flex;
@@ -339,9 +347,14 @@ header {
 }
 
 .client-profile {
-  width: 80px;
+  width: 80px !important;
   height: 80px;
   border-radius: 50%;
+  margin: 0 auto;
+}
+.client-rating {
+  max-width: 80px;
+  margin: 0 auto;
 }
 .testimonial-item h4 {
   font-size: 18px;
@@ -517,4 +530,38 @@ footer {
   right: 3%;
   cursor: pointer;
   background-color: transparent;
+}
+
+/* Vendor */
+.owl-stage {
+  padding-left: 0px !important;
+}
+
+.place-section .owl-nav {
+  position: absolute;
+  top: -16%;
+  right: 15%;
+}
+
+.place-section button.owl-prev,
+.place-section button.owl-next {
+  width: 48px;
+  height: 48px;
+  background: rgba(230, 28, 93, 0.04) !important;
+  border-radius: 50% !important;
+  position: relative;
+}
+.place-section button.owl-prev span,
+.place-section button.owl-next span {
+  font-size: 40px;
+  color: var(--primary-color);
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 0 !important;
+}
+
+.owl-stage-outer {
+  padding: 30px 0px;
 }

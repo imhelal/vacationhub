@@ -13,9 +13,11 @@
       rel="stylesheet"
     />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
     <!-- App CSS -->
     <link rel="stylesheet" href="assets/css/app.css">
-
+    <link rel="stylesheet" href="assets/css/responsive.css">
   </head>
   <body>
     <!-- Header -->
@@ -137,19 +139,19 @@
                 <div class="count-wrapper">
 
                     <div class="count-item">
-                        <span class="count">15</span>
+                        <span class="count counter">15</span>
                         <span class="count-title">Years of Experience</span>
                     </div><!-- /.count-item -->
                     <div class="count-item">
-                        <span class="count">1k</span>
+                        <span class="count"><span class="counter">20</span>k</span>
                         <span class="count-title">Sucessful Trips</span>
                     </div><!-- /.count-item -->
                     <div class="count-item">
-                        <span class="count">20k</span>
+                        <span class="count"><span class="counter">20</span>k</span>
                         <span class="count-title">Happy Customers</span>
                     </div><!-- /.count-item -->
                     <div class="count-item">
-                        <span class="count">4.9</span>
+                        <span class="count counter">4.9</span>
                         <span class="count-title">Overall Rating</span>
                     </div><!-- /.count-item -->
 
@@ -169,7 +171,7 @@
                     <span class="primary-color">the world</span>
                 </h2>
             </div><!-- title -->
-            <div class="toure-places">
+            <div class="toure-places owl-carousel owl-theme">
 
                 <div class="tour-place-item">
                     <div class="place-img">
@@ -215,6 +217,35 @@
                         </div>
                     </div>
                 </div><!-- /.toure-place-item -->
+                <div class="tour-place-item">
+                    <div class="place-img">
+                        <img src="assets/images/place-3.jpg" alt="">
+                    </div>
+                    <div class="place-content">
+                        <h3>The unique character as a symbol of taste and ostentation</h3>
+                        <p>İstanbul, Turkey</p>
+                        <img src="assets/icons/place-rating.svg" alt="">
+                        <div class="place-footer">
+                            <span class="price">$150</span>
+                            <span>10 days tour</span>
+                        </div>
+                    </div>
+                </div><!-- /.toure-place-item -->
+
+                <div class="tour-place-item">
+                    <div class="place-img">
+                        <img src="assets/images/place-4.jpg" alt="">
+                    </div>
+                    <div class="place-content">
+                        <h3>The unique character as a symbol of taste and ostentation</h3>
+                        <p>İstanbul, Turkey</p>
+                        <img src="assets/icons/place-rating.svg" alt="">
+                        <div class="place-footer">
+                            <span class="price">$150</span>
+                            <span>10 days tour</span>
+                        </div>
+                    </div>
+                </div><!-- /.toure-place-item -->
 
             </div><!-- /.toure-places -->
         </div><!-- /.container -->
@@ -230,7 +261,7 @@
                     Satisfied <span class="primary-color">travellers</span> around the world
                 </h2>
             </div><!-- title -->
-            <div class="testimonials">
+            <div class="testimonials owl-carousel owl-theme">
     
                 <div class="testimonial-item">
                     <img src="assets/images/customer-1.png" alt="" class="client-profile">
@@ -385,8 +416,13 @@
 
 
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.js"></script>
 
+<script src="https://bfintal.github.io/Counter-Up/jquery.counterup.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
+<script src="assets/js/app.js"></script>
 </body>
 
 </html>
