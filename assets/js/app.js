@@ -46,3 +46,9 @@ $(".testimonials").owlCarousel({
     },
   },
 });
+
+/* Navbar */
+function menuToggler() {
+  var navbarName = document.querySelector(".navbar");
+  navbarName.classList.toggle("open");
+}

@@ -64,6 +64,13 @@ a {
 select {
   background: transparent;
 }
+button {
+  border: none;
+  cursor: pointer;
+}
+#toggle-btn {
+  display: none;
+}
 /* Header CSS */
 header {
   background: var(--white-text);
@@ -74,6 +81,7 @@ header {
   justify-content: space-between;
   align-items: center;
   min-height: 100px;
+  position: relative;
 }
 
 .header-logo img {

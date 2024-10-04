@@ -1,4 +1,28 @@
 @media only screen and (max-width: 600px) {
+  #toggle-btn {
+    display: block;
+  }
+  .navbar {
+    position: absolute;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    padding: 20px 0px;
+    top: 100%;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: 0.3s;
+    box-shadow: var(--box-shadow);
+  }
+  .navbar.open {
+    transform: scaleY(1);
+  }
+  .navbar ul {
+    flex-direction: column;
+  }
+  .navbar ul li {
+    text-align: center;
+  }
   /*header */
   .header-cta {
     display: none;
@@ -6,7 +30,6 @@
 
   .container {
     max-width: 100%;
-    overflow: hidden;
     padding: 0px 15px;
   }
   .hero-section {
